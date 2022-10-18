@@ -1,5 +1,28 @@
+@font-face {
+  font-family: Space;
+  src: url("../Death\ Star.otf");
+}
+
+.space {
+  font-family: Space;
+  letter-spacing: 1px;
+}
+
 body {
   background-image: url("../img/space.jpg");
   color: white;
   background-size: cover;
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 12px;
+  background: white;
+  border: none;
+  font-family: inherit;
+}
+
+.span-u {
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
 }
