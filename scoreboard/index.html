@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+        <div id="home-score" class="score">0</div>
+        <div class="flex-btn">
+          <button onclick="homeAddOne()">+1</button>
+          <button onclick="homeAddTwo()">+2</button>
+          <button onclick="homeAddThree()">+3</button>
+        </div>
+      </div>
+
+      <button class="reset-btn" onclick="reset()">Reset</button>
+
+      <div>
+        <h3>GUEST</h3>
+        <div id="guest-score" class="score">0</div>
+        <div class="flex-btn">
+          <button onclick="guestAddOne()">+1</button>
+          <button onclick="guestAddTwo()">+2</button>
+          <button onclick="guestAddThree()">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
