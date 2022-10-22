@@ -40,14 +40,10 @@ function addLength() {
 }
 
 function displayPass() {
-  let one = getRandomChar()
-  let two = getRandomChar()
-  let three = getRandomChar()
-  let four = getRandomChar()
-  passOneEl.textContent = one
-  passTwoEl.textContent = two
-  passThreeEl.textContent = three
-  passFourEl.textContent = four
+  passOneEl.textContent = getRandomChar()
+  passTwoEl.textContent = getRandomChar()
+  passThreeEl.textContent = getRandomChar()
+  passFourEl.textContent = getRandomChar()
   if(hidden) {
     hiddenEl.style.visibility = "visible"
   }
