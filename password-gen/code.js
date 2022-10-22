@@ -24,7 +24,6 @@ function minusLength() {
     length -= 1
     lengthEl.textContent = length
   } else {
-    lengthEl.textContent = length
     warningEl.textContent = "Minimum of 5 characters only!"
   }
 }
@@ -34,7 +33,6 @@ function addLength() {
     length += 1
     lengthEl.textContent = length
   } else {
-    lengthEl.textContent = length
     warningEl.textContent = "Maximum of 20 characters only!"
   }
 }
