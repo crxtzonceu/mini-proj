@@ -23,7 +23,7 @@ function minusLength() {
   if(length > 5) {
     length -= 1
     lengthEl.textContent = length
-  } else if (length == 5) {
+  } else {
     lengthEl.textContent = length
     warningEl.textContent = "Minimum of 5 characters only!"
   }
@@ -33,12 +33,11 @@ function addLength() {
   if(length < 20) {
     length += 1
     lengthEl.textContent = length
-  } else if (length == 20) {
+  } else {
     lengthEl.textContent = length
     warningEl.textContent = "Maximum of 20 characters only!"
   }
 }
-
 
 function displayPass() {
   let one = getRandomChar()
@@ -54,7 +53,6 @@ function displayPass() {
   }
   copyEl.textContent = "Click password to copy"
 }
-
 
 function getRandomChar() {
   let rng = ""
