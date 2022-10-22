@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap" rel="stylesheet">
+    <title>Password-generator</title>
+  </head>
+
+  <body>
+    <!-- main container -->
+    <div class="container">
+      <div class="top-section">
+        <div class="top-left">
+          <h1>Generate a <br><span class="green">random password</span></h1>
+          <p class="main-p">Never use an insecure password again.</p>
+          <!-- select password length -->
+          <div class="length-container">
+            <p><span class="purple">Password Length:</span></p>
+            <button onclick="addLength()">+</button>
+            <span class="length" id="length">8</span>
+            <button onclick="minusLength()">-</button>
+          </div> <!-- / length-->
+          <span class="warning" id="warning"></span>
+          <button class="generate" onclick="displayPass()">Generate Password</button>
+        </div> <!-- / top-left -->
+        <div class="top-right">
+          <img src="https://static.vecteezy.com/system/resources/previews/000/223/944/non_2x/laptop-icon-illustration-on-unusual-background-vector.jpg">
+        </div>
+        <!-- Insert Margin bottom border -->
+        <!-- or just hr tag -->
+      </div> <!-- / top section-->
+
+      <!-- lower-section -->
+      <div class="hide">
+        <div class="lower-section">
+          <div id="pass-one"></div>
+          <div id="pass-two"></div>
+          <div id="pass-three"></div>
+          <div id="pass-four"></div>
+        </div> <!-- / lower-section -->
+        
+        <p class="center">Click password to copy</p>
+      </div> <!-- / hide-->
+    </div> <!-- / main container-->
+
+    <script src="code.js"></script>
+  </body>
+</html>
+<!-- Maximum of 20 characters only! -->

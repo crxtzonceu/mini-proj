@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  background-color: #1C1C1C;
+}
+/* end of general */
+/* -------------- */
+
+.green {
+  color: #4ADF86;
+}
+.purple {
+  color: #ab80ef;
+}
+.center {
+  text-align: center;
+}
+
+/* end of utility */
+/* -------------- */
+
+
+/* main content */
+
+.container {
+  border: 3px solid white;
+  margin: 60px auto;
+  width: 650px;
+  height: 540px;
+  padding: 30px;
+  background: #1F2937;
+  border-radius: 4px;
+}
+
+.length-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* border: 1px solid yellow; */
+  height: 45px;
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.length-container button {
+  padding: 6px 12px;
+  background-color: #4ADF86;
+  border-radius: 50%;
+  border: 2px solid #ab80ef;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-section {
+  border-bottom: 1px solid gray;
+  height: 300px;
+  width: 600px;
+  margin: 0 0 10px 0; /* bottom */
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-family: 'Karla', sans-serif;
+}
+.main-p {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 200px;
+  height: auto;
+  border: 2px solid cyan;
+  border-radius: 10px;
+}
+
+.warning,
+.generate {
+  display: block;
+}
+
+.warning {
+  margin-bottom: 15px;
+}
+
+.generate {
+  width: 190px;
+  height: 42px;
+  background-color: #10B981;
+  color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 9px 17px;
+}
+
+.length {
+  font-weight: bold;
+}
+
+
+
+/* Result section */
+
+.lower-section {
+  height: 120px;
+  width: 600px;
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.lower-section div {
+  width: 230px;
+  text-align: center;
+  padding: 8px 16px;
+  background: #273549;
+  border-radius: 6px;
+}
+
+.hide {
+  visibility: hidden;
+}
