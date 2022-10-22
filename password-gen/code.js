@@ -5,6 +5,7 @@ let passTwoEl = document.getElementById("pass-two")
 let passThreeEl = document.getElementById("pass-three")
 let passFourEl = document.getElementById("pass-four")
 let hiddenEl = document.querySelector(".hide")
+let copyEl = document.getElementById("copy-clipboard")
 const char = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 let hidden = true
@@ -50,6 +51,7 @@ function displayPass() {
   if(hidden) {
     hiddenEl.style.visibility = "visible"
   }
+  copyEl.textContent = "Click password to copy"
 }
 
 
@@ -59,4 +61,21 @@ function getRandomChar() {
     rng += char[Math.floor(Math.random() * char.length)]
   }
   return rng
+}
+
+const copy1 = () => {
+  navigator.clipboard.writeText(passOneEl.innerText)
+  copyEl.textContent = "Copied!"
+}
+const copy2 = () => {
+  navigator.clipboard.writeText(passTwoEl.innerText)
+  copyEl.textContent = "Copied!"
+}
+const copy3 = () => { 
+  navigator.clipboard.writeText(passThreeEl.innerText)
+  copyEl.textContent = "Copied!"
+}
+const copy4 = () => {
+  navigator.clipboard.writeText(passFourEl.innerText)
+  copyEl.textContent = "Copied!"
 }
