@@ -65,10 +65,5 @@ function newCard() {
     sum += card
     cards.push(card)
     renderGame()
-    console.log("alive: " + isAlive)
-    console.log("blackjack: " + hasBlackJack)
-    console.log("cards array: " + cards)
-    console.log("card addede: " + card)
-    console.log("sum: " + sum)
   }
 }
