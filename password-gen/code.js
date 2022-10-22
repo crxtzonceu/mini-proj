@@ -11,11 +11,10 @@ const char = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q
 let hidden = true
 let length = 8
 
-
-// Warning!! this code is bad and not dry
-// i just wanted to do something from basic before moving on to 
-// next lesson
-
+/* 
+Warning!! this code is bad and not dry
+i just wanted to do something from basic before moving on to next lesson 
+*/
 
 
 // Function
