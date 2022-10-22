@@ -1,15 +1,26 @@
+/* There is a bug on the tutorial which you cant
+    new game when you already got bj on previous
+    fix is you need to reset the bj status
+*/
 let cards = []
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
+let player = {
+  name: "user",
+  chips: 400
+}
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
 
+playerEl.textContent = `${player.name}: $${player.chips}`
 
 function startGame() {
   isAlive = true
+  hasBlackJack = false
   let first = getRandomCard()
   let second = getRandomCard()
   cards = [first, second]
@@ -37,13 +48,13 @@ function renderGame() {
   sumEl.textContent = `Sum: ${sum}`
 
   if (sum <= 20) {
-      message = "Do you want to draw a new card?"
+    message = "Do you want to draw a new card?"
   } else if (sum === 21) {
-      message = "Wohoo! You've got Blackjack!"
-      hasBlackJack = true
+    message = "Wohoo! You've got Blackjack!"
+    hasBlackJack = true
   } else {
-      message = "You're out of the game!"
-      isAlive = false
+    message = "You're out of the game!"
+    isAlive = false
   }
   messageEl.textContent = message
 }
@@ -54,5 +65,10 @@ function newCard() {
     sum += card
     cards.push(card)
     renderGame()
+    console.log("alive: " + isAlive)
+    console.log("blackjack: " + hasBlackJack)
+    console.log("cards array: " + cards)
+    console.log("card addede: " + card)
+    console.log("sum: " + sum)
   }
 }
