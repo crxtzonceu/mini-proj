@@ -11,8 +11,8 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #1C1C1C;
 }
-/* end of general */
-/* -------------- */
+/* End of General */
+
 
 .green {
   color: #4ADF86;
@@ -24,11 +24,11 @@ body {
   text-align: center;
 }
 
-/* end of utility */
+/* End of Utility */
 /* -------------- */
 
 
-/* main content */
+/* Main Content */
 
 .container {
   border: 3px solid white;
@@ -114,7 +114,7 @@ img {
   font-weight: bold;
 }
 
-/* display result section */
+/* display Result Section */
 
 .lower-section {
   height: 120px;
