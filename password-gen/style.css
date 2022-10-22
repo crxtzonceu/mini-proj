@@ -96,6 +96,7 @@ img {
 
 .warning {
   margin-bottom: 15px;
+  color: rgb(240, 64, 64);
 }
 
 .generate {
@@ -130,7 +131,7 @@ img {
 }
 
 .lower-section div {
-  width: 230px;
+  width: 250px;
   text-align: center;
   padding: 8px 16px;
   background: #273549;
