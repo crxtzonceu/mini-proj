@@ -1,11 +1,11 @@
-let lengthEl = document.getElementById("length")
-let warningEl = document.getElementById("warning")
-let passOneEl = document.getElementById("pass-one")
-let passTwoEl = document.getElementById("pass-two")
-let passThreeEl = document.getElementById("pass-three")
-let passFourEl = document.getElementById("pass-four")
-let hiddenEl = document.querySelector(".hide")
-let copyEl = document.getElementById("copy-clipboard")
+const lengthEl = document.getElementById("length")
+const warningEl = document.getElementById("warning")
+const passOneEl = document.getElementById("pass-one")
+const passTwoEl = document.getElementById("pass-two")
+const passThreeEl = document.getElementById("pass-three")
+const passFourEl = document.getElementById("pass-four")
+const hiddenEl = document.querySelector(".hide")
+const copyEl = document.getElementById("copy-clipboard")
 const char = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 let hidden = true
